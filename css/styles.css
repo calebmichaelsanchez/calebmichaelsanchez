@@ -1,0 +1,180 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: 'Montserrat', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*, *:before, *:after {
+	box-sizing:  border-box;
+}
+body {
+	background-image: url("../images/background.jpeg");
+	background-attachment:  fixed;
+}
+img {
+	max-width: 100%;
+}
+
+/* -------------------------- */
+/* typography */
+h1 {
+	font-size: 2rem;
+	font-weight: 500;
+	letter-spacing: 3px;
+	text-align: center;
+	margin-bottom:  2rem;
+	color: #fff;
+}
+h1 a {
+	text-decoration:  none;
+	color: #fff;
+}
+h2{
+	font-size: 1.5rem;
+	font-weight: 800;
+	letter-spacing: 1px;
+	margin-bottom: 2rem;
+	color: #fff;
+}
+h3{
+	font-size: 2rem;
+	font-weight: 500;
+	letter-spacing: 1px;
+	margin-bottom: 1.5rem;
+	color: #fff;
+}
+h4 {
+	font-size: 1rem;
+	font-weight: 500;
+	color: #fff;
+	leter-spacing: 1px;
+	margin-bottom: .5rem;
+}
+p {
+	font-size: 1rem;
+	font-weight: 500;
+	color: #fff;
+	margin-bottom: 1rem;
+	line-height: 1.5;
+}
+/* ------------------------ */
+/* Header section */
+header {
+	width:  100%;
+	min-height:  15vh;
+	padding: 2rem 0;
+}
+nav {
+	width:  100%;
+	display:  flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+nav a {
+	color:  #fff;
+	padding: 0 1rem;
+	text-decoration:  none;
+	text-transform:  uppercase;
+	letter-spacing:  2px;
+	padding-bottom: 1rem;
+}
+nav a:last-child {
+	padding-bottom: 0;
+}
+@media only screen and (min-width: 540px) {
+  nav {
+  	flex-direction: row;
+  }
+  nav a {
+  	padding-bottom: 0;
+  }
+}
+
+/* ------------------------ */
+/* main containers */
+section {
+	width:  100%;
+	min-height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items:  center;
+}
+main {
+	width: 100%;
+	max-width: 650px;
+	margin: 0 auto;
+	padding: 4rem 1rem 4rem;
+}
+footer {
+	width:  100%;
+	min-height: 5vh;
+	padding: 2rem 0;
+}
+
+/* ------------------------ */
+/* dates */
+.dates {
+	margin-bottom: 3rem;
+}
+.dates li {
+	margin-left:  1rem;
+	margin-bottom: 1.5rem;
+}
+.dates li:last-child {
+	margin-bottom:  0;
+}
+.dates a {
+	color: #fff;
+}
+.list-break {
+	margin: 2rem 0;
+}
+/* ------------------------ */
+/* contact */
+.contact h2 {
+	text-align:  center;
+}
