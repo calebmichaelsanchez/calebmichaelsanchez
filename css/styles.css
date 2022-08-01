@@ -73,21 +73,21 @@ h1 a {
 	color: #fff;
 }
 h2{
-	font-size: 1.5rem;
-	font-weight: 800;
-	letter-spacing: 1px;
-	margin-bottom: 2rem;
-	color: #fff;
-}
-h3{
 	font-size: 2rem;
 	font-weight: 500;
 	letter-spacing: 1px;
-	margin-bottom: 1.5rem;
 	color: #fff;
+	margin-bottom: 2rem;
+}
+h3{
+	font-size: 1.5rem;
+	font-weight: 800;
+	letter-spacing: 1px;
+	margin-bottom: 1.5rem;
+	color: orange;
 }
 h4 {
-	font-size: 1rem;
+	font-size: 1.125rem;
 	font-weight: 500;
 	color: #fff;
 	leter-spacing: 1px;
@@ -98,8 +98,10 @@ p {
 	font-weight: 500;
 	color: #fff;
 	margin-bottom: 1rem;
+	letter-spacing: 1px;
 	line-height: 1.5;
 }
+
 /* ------------------------ */
 /* Header section */
 header {
@@ -115,12 +117,16 @@ nav {
 	align-items: center;
 }
 nav a {
+	position: relative;
 	color:  #fff;
-	padding: 0 1rem;
+	padding: 0 1rem 1rem;
 	text-decoration:  none;
-	text-transform:  uppercase;
+	text-transform:  lowercase;
 	letter-spacing:  2px;
-	padding-bottom: 1rem;
+	transition: transform .3s ease, color .3s ease;
+}
+nav a.active {
+	color: orange;
 }
 nav a:last-child {
 	padding-bottom: 0;
@@ -130,7 +136,15 @@ nav a:last-child {
   	flex-direction: row;
   }
   nav a {
-  	padding-bottom: 0;
+    padding: 1rem;
+  }
+  nav a:last-child {
+  	padding-bottom: 1rem;
+  }
+  nav a:hover {
+  	color: orange;
+  	transform: translateY(-5px);
+  	transition-duration: .8s;
   }
 }
 
@@ -169,6 +183,10 @@ footer {
 }
 .dates a {
 	color: #fff;
+	transition: color .3s ease;
+}
+.dates a:hover {
+	color: orange;
 }
 .list-break {
 	margin: 2rem 0;
