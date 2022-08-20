@@ -61,11 +61,12 @@ img {
 /* -------------------------- */
 /* typography */
 h1 {
-	font-size: 2rem;
+	font-size: 2.625rem;
+	line-height: 4.125rem;
 	font-weight: 500;
 	letter-spacing: 3px;
 	text-align: center;
-	margin-bottom:  2rem;
+	/*margin-bottom:  2rem;*/
 	color: #fff;
 }
 h1 a {
@@ -73,33 +74,44 @@ h1 a {
 	color: #fff;
 }
 h2{
-	font-size: 2rem;
+	font-size: 2.0625rem;
+	line-height: 3.3125rem;
 	font-weight: 500;
 	letter-spacing: 1px;
 	color: #fff;
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 }
 h3{
-	font-size: 1.5rem;
+	font-size: 1.625rem;
+	line-height: 2.6825;
 	font-weight: 800;
 	letter-spacing: 1px;
-	margin-bottom: 1.5rem;
+	/*margin-bottom: 1.5rem;*/
 	color: orange;
 }
 h4 {
-	font-size: 1.125rem;
+	font-size: 1.25rem;
+	line-height: 2.125rem;
 	font-weight: 500;
 	color: #fff;
-	leter-spacing: 1px;
-	margin-bottom: .5rem;
+	letter-spacing: .25px;
+	/*margin-bottom: .5rem;*/
 }
-p {
+h5 {
+	font-size: 1rem;
+	line-height: 1.75rem;
+	font-weight: 500;
+}
+h6 {
+	font-size: 0.8125rem;
+	line-height: 1.5rem;
+}
+p, main a {
 	font-size: 1rem;
 	font-weight: 500;
 	color: #fff;
 	margin-bottom: 1rem;
-	letter-spacing: 1px;
-	line-height: 1.5;
+	line-height: 1.75rem;
 }
 
 /* ------------------------ */
@@ -132,15 +144,11 @@ nav a:last-child {
 	padding-bottom: 0;
 }
 @media only screen and (min-width: 540px) {
-  nav {
-  	flex-direction: row;
-  }
-  nav a {
-    padding: 1rem;
-  }
-  nav a:last-child {
-  	padding-bottom: 1rem;
-  }
+  header h1 a { transition: color .3s ease; }
+	header h1 a:hover { color: orange; }
+  nav { flex-direction: row; }
+  nav a { padding: 1rem; }
+  nav a:last-child { padding-bottom: 1rem; }
   nav a:hover {
   	color: orange;
   	transform: translateY(-5px);
@@ -171,9 +179,7 @@ footer {
 
 /* ------------------------ */
 /* dates */
-.dates {
-	margin-bottom: 3rem;
-}
+.dates p { margin-bottom: 0; }
 .dates li {
 	margin-left:  1rem;
 	margin-bottom: 1.5rem;
@@ -182,17 +188,31 @@ footer {
 	margin-bottom:  0;
 }
 .dates a {
+  display: block;
+  margin-bottom: 0;
 	color: #fff;
 	transition: color .3s ease;
 }
 .dates a:hover {
 	color: orange;
 }
+.dates li:after {
+  content: '---';
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.75rem;
+  text-decoration: none;
+}
 .list-break {
-	margin: 2rem 0;
+	margin: 1.25rem 0;
 }
 /* ------------------------ */
 /* contact */
+.contact main {
+	padding-top: 0;
+}
 .contact h2 {
 	text-align:  center;
 }
