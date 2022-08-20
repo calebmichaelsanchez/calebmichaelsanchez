@@ -112,8 +112,14 @@ p, main a {
 	color: #fff;
 	margin-bottom: 1rem;
 	line-height: 1.75rem;
+  transition: color .4s ease;
 }
-
+main a:hover {
+  color: orange;
+}
+ul p {
+  margin-bottom: 0;
+}
 /* ------------------------ */
 /* Header section */
 header {
@@ -179,10 +185,9 @@ footer {
 
 /* ------------------------ */
 /* dates */
-.dates p { margin-bottom: 0; }
-.dates li {
+li {
 	margin-left:  1rem;
-	margin-bottom: 1.5rem;
+	margin-bottom: 1.25rem;
 }
 .dates li:last-child {
 	margin-bottom:  0;
@@ -190,11 +195,6 @@ footer {
 .dates a {
   display: block;
   margin-bottom: 0;
-	color: #fff;
-	transition: color .3s ease;
-}
-.dates a:hover {
-	color: orange;
 }
 .dates li:after {
   content: '---';
