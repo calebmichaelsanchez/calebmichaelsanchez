@@ -208,9 +208,8 @@ li {
   line-height: 1.75rem;
   text-decoration: none;
 }
-.dates__info p:first-child {
-	/*color: orangered;*/
-	font-style: italic;
+.dates__info p:nth-child(2) {
+	margin-bottom: 0;
 }
 .list-break {
 	margin: 1.25rem 0;
