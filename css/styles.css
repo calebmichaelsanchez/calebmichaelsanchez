@@ -111,15 +111,18 @@ p, main a {
 	font-weight: 500;
 	color: #fff;
 	margin-bottom: 1rem;
-	line-height: 1.75rem;
+	line-height: 1.5rem;
   transition: color .4s ease;
 }
 main a:hover {
   color: orange;
 }
-ul p {
+/*ul p {
   margin-bottom: 0;
-}
+}*/
+/*ul li a:last-child {
+	margin-top: 1rem;
+}*/
 /* ------------------------ */
 /* Header section */
 header {
@@ -204,6 +207,10 @@ li {
   color: #fff;
   line-height: 1.75rem;
   text-decoration: none;
+}
+.dates__info p:first-child {
+	/*color: orangered;*/
+	font-style: italic;
 }
 .list-break {
 	margin: 1.25rem 0;
