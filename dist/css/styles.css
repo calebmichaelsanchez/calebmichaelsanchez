@@ -1,0 +1,352 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+/******************************************************************************
+ * User Agent
+*******************************************************************************/
+::-webkit-scrollbar {
+  display: none;
+}
+
+/******************************************************************************
+ * Document
+*******************************************************************************/
+html {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 1rem;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ed7472;
+}
+html:after {
+  display: block;
+  position: fixed;
+  content: "";
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  border: 10px solid #eded72;
+  z-index: 0;
+}
+
+body {
+  position: relative;
+  z-index: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+}
+
+/* -------------------------- */
+/* typography */
+h1 {
+  font-size: 2.625rem;
+  line-height: 4.125rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-align: center;
+  /*margin-bottom:  2rem;*/
+  color: #ba807f;
+}
+
+h1 a {
+  text-decoration: none;
+  color: #eded72;
+}
+
+h2 {
+  font-size: 2.0625rem;
+  line-height: 3.3125rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #eded72;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.625rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  /*margin-bottom: 1.5rem;*/
+  color: #eded72;
+}
+
+h4 {
+  font-size: 1.25rem;
+  line-height: 2.125rem;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 0.25px;
+  /*margin-bottom: .5rem;*/
+}
+
+h5 {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 0.8125rem;
+  line-height: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #eded72;
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+}
+
+a {
+  color: #eded72;
+  text-decoration: underline;
+  transition: color 0.4s ease;
+}
+a:hover {
+  color: #7279ed;
+}
+
+/*ul p {
+  margin-bottom: 0;
+}*/
+/*ul li a:last-child {
+  margin-top: 1rem;
+}*/
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+/* ------------------------ */
+/* Header section */
+header {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  position: relative;
+  padding: 0 1rem 1rem;
+  text-decoration: none;
+  text-transform: lowercase;
+  letter-spacing: 2px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav a.active {
+  color: #7279ed;
+}
+
+nav a:last-child {
+  padding-bottom: 0;
+}
+
+@media only screen and (min-width: 540px) {
+  header h1 a {
+    transition: color 0.3s ease;
+  }
+  header h1 a:hover {
+    color: #7279ed;
+  }
+  nav {
+    flex-direction: row;
+  }
+  nav a {
+    padding: 1rem;
+  }
+  nav a:last-child {
+    padding-bottom: 1rem;
+  }
+  nav a:hover {
+    transform: translateY(-5px);
+    transition-duration: 0.6s;
+  }
+}
+/* ------------------------ */
+/* main containers */
+section {
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0rem 2rem 4rem;
+}
+
+footer {
+  width: 100%;
+  min-height: 5vh;
+  padding: 0 0 6rem;
+}
+
+.camera-roll {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.camera-roll__item {
+  margin: 0;
+  padding: 1rem;
+  flex-basis: 100%;
+}
+@media only screen and (min-width: 540px) {
+  .camera-roll__item {
+    flex-basis: 50%;
+  }
+}
+
+.thumbnail {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.thumbnail a {
+  position: relative;
+  display: block;
+}
+.thumbnail__item {
+  margin: 0;
+  padding: 1rem;
+  flex-basis: 100%;
+}
+.thumbnail__item:hover .thumbnail__overlay {
+  opacity: 0;
+}
+@media only screen and (min-width: 540px) {
+  .thumbnail__item {
+    flex-basis: 33.33%;
+  }
+}
+.thumbnail__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1.25rem 0.75rem 0.75rem;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.6s ease;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.photos {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.photos__item {
+  text-align: center;
+  margin: 0;
+  padding: 1rem;
+  flex-basis: 100%;
+}
+@media only screen and (min-width: 540px) {
+  .photos__item {
+    flex-basis: 50%;
+  }
+  .photos__item--half {
+    flex-basis: 50%;
+  }
+  .photos__item--full {
+    flex-basis: 100%;
+  }
+}
+
+/* ------------------------ */
+/* dates */
+/* ----------- */
+.about img {
+  max-width: 450px;
+}
+
+/* ------------------------ */
+/* contact */
+.contact main {
+  padding-top: 0;
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
